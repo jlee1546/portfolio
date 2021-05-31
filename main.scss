@@ -1,0 +1,54 @@
+
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(12, 166, 228);
+  z-index: 5;
+  width: 100vw;
+  
+
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+#welcome-section {
+  height: 100vh;
+  margin-top: 5rem;
+
+  div {
+    text-align: center;
+  }
+}
+
+
+
+
+
+.project-tile {
+  width: 90vw;
+  margin: 0 auto;
+  text-align: center;
+
+  img {
+    width: 75%;
+    
+  }
+
+  @media (min-width: 40rem) {
+    img {
+      width: 50%;
+    }
+  }
+}
+
+

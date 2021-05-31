@@ -1,3 +1,32 @@
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0ca6e4;
+  z-index: 5;
+  width: 100vw; }
+  #navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly; }
+  #navbar a {
+    text-decoration: none;
+    color: black; }
 
+#welcome-section {
+  height: 100vh;
+  margin-top: 5rem; }
+  #welcome-section div {
+    text-align: center; }
+
+.project-tile {
+  width: 90vw;
+  margin: 0 auto;
+  text-align: center; }
+  .project-tile img {
+    width: 75%; }
+  @media (min-width: 40rem) {
+    .project-tile img {
+      width: 50%; } }
 
 /*# sourceMappingURL=main.css.map */
