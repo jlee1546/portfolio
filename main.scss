@@ -1,4 +1,6 @@
-
+* {
+  box-sizing: border-box;
+}
 
 #navbar {
   position: fixed;
@@ -22,25 +24,55 @@
 }
 
 #welcome-section {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 5rem;
 
+  h1 {
+    margin-bottom: 2px;
+  }
+
+  h2 {
+    margin-top: 2px;
+  }
+
   div {
+    text-align: center;
+    
+  }
+
+  @media (min-width: 40rem) {
+    height: 100vh;
+
+    div {
+      transform: translateY(-200%);
+    }
+  }
+}
+
+#projects {
+  margin-top: 5rem;
+  h3 {
     text-align: center;
   }
 }
 
 
 
-
-
 .project-tile {
-  width: 90vw;
-  margin: 0 auto;
+  width: 75vw;
+  margin: 5rem auto;
   text-align: center;
+  background: rgb(12, 166, 228);
+  padding: 2rem;
+  box-shadow: 2px 2px 10px #ccc;
+
+  
 
   img {
     width: 75%;
+    border: inset #ccc 2px;
     
   }
 
@@ -50,5 +82,57 @@
     }
   }
 }
+
+.first-tile {
+  margin-top: 1rem;
+}
+
+#contact {
+
+  
+  h2 {
+    text-align: center;
+    color: rgb(12, 166, 228);
+    
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    
+  }
+  .bi-twitter {
+    color: rgb(12, 166, 228);
+    
+  }
+
+  .bi-envelope {
+    background: #ccc;
+  }
+
+  .bi-telephone {
+    color: rgb(12, 166, 228);
+  }
+}
+
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5rem;
+  height: 20vh;
+
+  
+}
+
+#footer {
+  width: 100%;
+  border-top: 1px solid black;
+  text-align: center;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
 
 
